@@ -4,7 +4,7 @@
 
 O código é Ruby. Só precisa executar:  
 
-`ruby exercicio_1/fizzbuzz_test.rb -p`
+`ruby exercicio_1/fizzbuzz_test.rb -p`  
 `ruby exercicio_2/hamming_test.rb -p`
 
 ## Como praticar?
