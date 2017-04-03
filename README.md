@@ -5,7 +5,9 @@
 O código é Ruby. Só precisa executar:  
 
 `ruby exercicio_1/fizzbuzz_test.rb -p`  
-`ruby exercicio_2/hamming_test.rb -p`
+`ruby exercicio_2/hamming_test.rb -p`  
+`ruby exercicio_3/cartao_test.rb -p`  
+`ruby exercicio_3/validador_test.rb -p`
 
 ## Como praticar?
 
