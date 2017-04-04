@@ -4,7 +4,6 @@ require_relative 'cartao'
 
 class CartaoTest < Minitest::Test
   def test_mascara_numero
-    skip
     cartao = Cartao.new("VISA", "4123123412341234")
 
     numero_mascarado = cartao.numero_mascarado()

@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require_relative 'hamming'
 
 # Calcular a distancia de Hamming entre dois segmentos de DNA
-# 
+#
 # Durante a cópia de um ácido nucléico, pode haver uma mutação.
 # A quantidade de nucleotídeos diferentes entre dois segmentos
 # de DNA representa a distância de Hamming.
@@ -24,28 +24,23 @@ class HammingTest < Minitest::Test
   end
 
   def test_segmentos_simples_identicos_tem_distancia_0
-    skip
     assert_equal 0, @hamming.calcula('A', 'A')
   end
 
   def test_segmentos_simples_diferentes_tem_distancia_1
-    skip
     assert_equal 1, @hamming.calcula('A', 'T')
   end
 
   def test_segmentos_maiores_identicos_tem_distancia_0
-    skip
     assert_equal 0, @hamming.calcula('GATACA', 'GATACA')
   end
 
   def test_segmentos_maiores_diferentes_tem_distancia_igual_ao_numero_de_mutacoes
-    skip
     assert_equal 2, @hamming.calcula('GAGCCTAC', 'GATCCGAC')
     assert_equal 5, @hamming.calcula('GAGCCTAC', 'CCTCCGCC')
   end
 
   def test_segmentos_de_tamanhos_diferentes_nao_podem_ser_usados_para_calcular
-    skip
     assert_raises(ArgumentError) { @hamming.calcula('GAC', 'GACTAC') }
   end
 end

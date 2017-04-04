@@ -6,6 +6,14 @@
 
 class FizzBuzz
   def verifica numero
-    # Implemente aqui a solucao
+    if numero % 3 == 0 && numero % 5 == 0
+      return "FizzBuzz"
+    elsif numero % 5 == 0
+      return "Buzz"
+    elsif numero % 3 == 0
+      return "Fizz"
+    else
+      return numero.to_s
+    end
   end
 end

@@ -16,6 +16,17 @@
 
 class Hamming
   def calcula(segmento_1, segmento_2)
-    # Implementar aqui a solução
+    if segmento_1.length != segmento_2.length
+      raise ArgumentError
+    end
+    contador = 0
+    for index in 0...segmento_1.length
+        letra1 = segmento_1[index]
+        letra2 = segmento_2[index]
+        if letra1 != letra2
+          contador += 1
+        end
+    end
+    return contador
   end
 end

@@ -7,6 +7,10 @@ class Cartao
   end
 
   def numero_mascarado
-    # Implemente aqui
+    mascarado = @numero[0..3]
+    (@numero.length - 4).times do |x|
+      mascarado += "*"
+    end
+    return mascarado
   end
 end
